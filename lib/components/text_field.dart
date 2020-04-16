@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 import '../constants.dart';
 
 // this is the default textfield which can be reused
@@ -11,27 +10,23 @@ class CustomTextField extends StatelessWidget {
   final bool obscureText;
   final IconData icon;
 
-
-
-
-  CustomTextField(
-      {this.hint,
-        this.textEditingController,
-        this.keyboardType,
-        this.icon,
-        this.obscureText= false,
-      });
+  CustomTextField({
+    @required this.hint,
+    @required this.textEditingController,
+    @required this.keyboardType,
+    @required this.icon,
+    @required this.obscureText,
+  });
 
   @override
   Widget build(BuildContext context) {
-
-
     return Material(
       borderRadius: BorderRadius.circular(30.0),
-      elevation:  12 ,
+      elevation: 12,
       child: TextFormField(
         controller: textEditingController,
         keyboardType: keyboardType,
+        obscureText: obscureText,
         cursorColor: kMobBlue,
         decoration: InputDecoration(
           prefixIcon: Icon(icon, color: kMobBlue, size: 20),

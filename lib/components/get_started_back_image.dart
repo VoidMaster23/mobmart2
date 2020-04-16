@@ -10,12 +10,12 @@ class GetStartedBackImage extends StatelessWidget {
         //this allows us to fade an image in
         FadeInImage(
           placeholder: MemoryImage(kTransparentImage),
-          image: AssetImage('images/backback.png'),
+          image: AssetImage('images/getStartedBack.png'),
           fadeInDuration: Duration(milliseconds: 100),
         ),
         FadeInImage(
           placeholder: MemoryImage(kTransparentImage),
-          image: AssetImage('images/backfront.png'),
+          image: AssetImage('images/getStartedFront.png'),
           fadeInDuration: Duration(milliseconds: 2000),
         ),
       ],
